@@ -1,0 +1,122 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+/* 네비게이션 바 */
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: #fff;
+  border-bottom: 1px solid #eee;
+  padding: 16px 0;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+.navbar a {
+  color: #6c3fc5;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 4px 12px;
+  border-radius: 8px;
+  transition: background 0.2s;
+}
+.navbar a.active, .navbar a:hover {
+  background: #f3eaff;
+}
+
+/* 페이지별 배경색 */
+.page.home { background: linear-gradient(to bottom, #cbe6ff 0%, #f6fbff 100%); min-height: 100vh; }
+.page.status { background: linear-gradient(to bottom, #e6d6fa 0%, #f8f3ff 100%); min-height: 100vh; }
+.page.today { background: linear-gradient(to bottom, #fff3b0 0%, #fffbe6 100%); min-height: 100vh; }
+.page.points { background: linear-gradient(to bottom, #d2f7d0 0%, #f6fff6 100%); min-height: 100vh; }
+.page.settings { background: linear-gradient(to bottom, #f6fbf7 0%, #fafdff 100%); min-height: 100vh; }
+
+/* 공통 타이틀/서브타이틀 */
+.title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: 32px;
+  color: #3d2c8d;
+}
+.subtitle {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #7c6cd6;
+  margin-bottom: 24px;
+}
+
+/* 각 페이지별 주요 박스 스타일 (예시) */
+.goal-box, .current-box, .save-box, .history-box, .account-box, .daily-box, .points-box, .points-history-box, .settings-box {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 2px 12px #0001;
+  margin: 0 auto 24px auto;
+  padding: 24px;
+  max-width: 420px;
+}
+.edit-btn, .save-btn, .deposit-btn {
+  background: #6c3fc5;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 18px;
+  font-size: 1rem;
+  margin-top: 16px;
+  cursor: pointer;
+}
+.edit-btn:hover, .save-btn:hover, .deposit-btn:hover {
+  background: #4d2c91;
+}
+.input-item, .input-amount {
+  display: block;
+  width: 100%;
+  margin: 12px 0;
+  padding: 10px;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+/* 기타 세부 스타일은 필요시 추가 */
